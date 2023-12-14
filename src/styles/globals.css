@@ -16,15 +16,6 @@
   background-color: #f1f1f1; /* Change this to your desired color */
 }
 
-/* For Firefox */
-/* scrollbar-width: thin;
-scrollbar-color: #4caf50 #f1f1f1; Change these colors to your desired colors */
-
-/* For Firefox */
-/* scrollbar-width: thin;
-scrollbar-color: linear-gradient(from [#F9C97C] to [#A2E9C1])
-  linear-gradient(from [#C9A9E9] to [#7EE7FC]); */
-
 @font-face {
   font-family: "sutonnyMJ";
   src: url("/font/SutonnyMJ.TTF") format("truetype");
@@ -310,3 +301,5 @@ table tr {
   box-shadow: 0 4px 30px rgba(4, 175, 255, 0.1),
     0 2px 30px rgba(11, 158, 255, 0.06);
 }
+
+/* dashboard btn style  */

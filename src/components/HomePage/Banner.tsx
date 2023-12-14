@@ -18,7 +18,10 @@ const Banner: React.FC<BannerProps> = () => {
 
   return (
     <>
-      <div className="w-full px-[7%] h-screen bg-[url('/images/banner.jpg')] bg-cover  bg-center ">
+      <div
+        className="w-full px-[7%] h-[80vh] bg-[url('/images/banner.jpg')] bg-cover  bg-center bg-slate-950 bg-blend-overlay bg-opacity-60
+      "
+      >
         <div className="z-40">
           <Lottie
             animationData={animationData}
@@ -33,3 +36,4 @@ const Banner: React.FC<BannerProps> = () => {
 };
 
 export default Banner;
+// bg-[url('/images/banner.jpg')] bg-cover  bg-center

@@ -51,7 +51,7 @@ const SubModal = () => {
                       70159001086027
                       <GoArrowUpRight
                         size={24}
-                        className="absolute right-0 top-0 group-hover:-top-2 group-hover:-right-2 group-hover:text-rose-600 duration-200 transition-all"
+                        className="absolute right-0 top-1 group-hover:-top-2 group-hover:-right-2 group-hover:text-rose-600 duration-200 transition-all"
                       />
                     </span>
                   </td>

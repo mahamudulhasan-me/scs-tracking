@@ -4,9 +4,8 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { BsHeadset } from "react-icons/bs";
 import { FiCheckCircle } from "react-icons/fi";
-import BtnDashboard from "../ButtonGroup/BtnDashboard";
+import { LuArrowUpRightSquare } from "react-icons/lu";
 import SectionHeadTitle from "../Shared/SectionHeadTitle";
-
 interface CustomerDashboardProps {}
 
 const CustomerDashboard: React.FC<CustomerDashboardProps> = () => {
@@ -59,7 +58,12 @@ const CustomerDashboard: React.FC<CustomerDashboardProps> = () => {
             rel="noopener noreferrer"
             className="w-[40%]"
           >
-            <BtnDashboard />
+            <button className=" md:col-span-2 md:w-full w-1/2 text-center mx-auto cssbuttons-io-button bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
+              Dashboard
+              <div className="icon">
+                <LuArrowUpRightSquare size={24} />
+              </div>
+            </button>
           </Link>
           <div className="w-[60%] flex items-center md:p-3 p-1 bg-white rounded-md shadow-lg">
             <section className="flex justify-center items-center w-12 h-12 rounded-full shadow-md bg-gradient-to-r from-[#F9C97C] to-[#A2E9C1] hover:from-[#C9A9E9] hover:to-[#7EE7FC] hover:cursor-pointer hover:scale-110 duration-300">

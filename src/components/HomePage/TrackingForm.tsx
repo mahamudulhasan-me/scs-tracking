@@ -40,15 +40,15 @@ const TrackingForm: React.FC = () => {
   };
   return (
     <>
-      <div className="tracking-form absolute md:bottom-20 bottom-[20%] md:h-48 md:w-4/5 mx-5 md:mx-auto left-0 right-0">
-        <div className="flex justify-between items-center px-2 border-b border-borderColor">
+      <div className="tracking-form absolute bottom-[30%] md:h-56 md:w-4/5 mx-5 md:mx-auto left-0 right-0">
+        <div className="flex justify-between items-center px-2  border-b border-borderColor">
           <div className="flex gap-1 ">
             <span className="bg-blue-500 inline-block center w-3 h-3 rounded-full"></span>
             <span className="bg-purple-500 inline-block center w-3 h-3 rounded-full"></span>
             <span className="bg-pink-500 box inline-block center w-3 h-3 rounded-full"></span>
           </div>
 
-          <div className="flex mx-auto text-center items-center gap-2 text-slate-50 uppercase md:font-semibold">
+          <div className="flex mx-auto text-center items-center gap-2 text-slate-50 uppercase  text-lg">
             <div className="flex flex-col gap-1 items-end">
               <span className="w-6 h-0.5 bg-p1"></span>
               <span className="w-10 h-0.5 bg-p1"></span>
@@ -56,6 +56,7 @@ const TrackingForm: React.FC = () => {
             Track Your Parcel
           </div>
         </div>
+
         <div className="w-full md:h-[calc(100%-40px)] flex justify-between items-center px-5">
           <form
             onSubmit={handleTracking}
@@ -110,7 +111,7 @@ const TrackingForm: React.FC = () => {
               />
             </div>
 
-            <button className=" md:col-span-2 md:w-full w-1/2 text-center mx-auto cssbuttons-io-button bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
+            <button className=" md:col-span-2 md:w-full w-1/2 text-center mx-auto cssbuttons-io-button  bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
               Search
               <div className="icon">
                 <TbMapPinSearch size={28} />
@@ -118,6 +119,10 @@ const TrackingForm: React.FC = () => {
             </button>
           </form>
         </div>
+        <p className="absolute bottom-0 text-center text-sm text-slate-100 w-full mx-auto mb-2">
+          *Track your CN details in one place with real-time updates. Track your
+          product by CN Number, Sender Phone, Receiver Phone or Ref No.
+        </p>
       </div>
 
       {/* this is sub modal where have a multiple cn by receiver or sender number */}

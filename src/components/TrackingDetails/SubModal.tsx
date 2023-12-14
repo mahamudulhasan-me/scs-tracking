@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { GoArrowUpRight } from "react-icons/go";
 import BtnClose from "../ButtonGroup/BtnClose";
 import BtnComplain from "../ButtonGroup/BtnComplain";
 import TrackingDetailsByCN from "./TrackingDetailsByCN";
@@ -43,16 +44,18 @@ const SubModal = () => {
                   <td>1</td>
                   <td>02-Aug-2023</td>
                   <td onClick={() => setCNDetailsModalOpen(true)}>
-                    <div className="relative inline-block">
-                      <span className="ring-1 ring-purple-600 p-2 rounded-lg border-slate-300 hover:bg-purple-700 hover:text-white hover:ring-0 transition-all duration-300 cursor-pointer">
-                        70159001086027
-                      </span>
-                      <div className="tooltip-text absolute bg-purple-700 text-white p-2 rounded-lg invisible opacity-0 bottom-full left-1/2 transform -translate-x-1/2 transition-all duration-300">
-                        View Details
-                      </div>
-                    </div>
+                    <span
+                      className="ring-1 ring-purple-600 pl-2 pr-5 py-2 rounded-lg border-slate-300 hover:bg-purple-700 hover:text-white hover:duration-200 hover:ring-0 transition-all duration-300 cursor-pointer items-center flex relative group "
+                      title="View Details"
+                    >
+                      70159001086027
+                      <GoArrowUpRight
+                        size={24}
+                        className="absolute right-0 top-0 group-hover:-top-2 group-hover:-right-2 group-hover:text-rose-600 duration-200 transition-all"
+                      />
+                    </span>
                   </td>
-                  <td>Mirpur-10, Dhaka (M10)</td>
+                  <td>Mirpur-10,Dhaka (M10)</td>
                   <td>Narsingdhi</td>
                   <td>Delivered</td>
                   <td>01710142370</td>

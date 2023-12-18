@@ -19,8 +19,14 @@ const CustomerDashboard: React.FC<CustomerDashboardProps> = () => {
 
   return (
     <div className="px-[7%] md:grid grid-cols-12 my-20 gap-20 items-center">
-      <div className="col-span-7 relative w-full h-full border bg-[url('/images/dashboard_bg.jpg')]  bg-cover bg-center">
-        {animationData && <Lottie animationData={animationData} loop={true} />}
+      <div className="col-span-7 relative w-full h-full   bg-cover bg-center">
+        {animationData && (
+          <Lottie
+            animationData={animationData}
+            loop={true}
+            className="w-full h-full"
+          />
+        )}
         <div className="absolute animation-container bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 md:-right-10 -right-2 md:top-4 -top-8 md:p-3 p-2 rounded-lg text-white flex items-center gap-3">
           <h4 className="md:text-3xl text-2xl font-semibold">400K</h4>
           <p className="md:text-lg tracking-widest ">
@@ -51,14 +57,14 @@ const CustomerDashboard: React.FC<CustomerDashboardProps> = () => {
             Company
           </p>
         </div>
-        <div className="flex items-center md:gap-5">
+        <div className="md:flex items-center md:gap-5">
           <Link
             href={"https://customer.sundarbancourierltd.com/"}
             target="_blank"
             rel="noopener noreferrer"
             className="w-[40%]"
           >
-            <button className=" md:col-span-2 md:w-full w-1/2 text-center mx-auto cssbuttons-io-button bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
+            <button className=" md:col-span-2 md:w-full w-1/2 text-center mx-auto cssbuttons-io-button bg-primary-dark">
               Dashboard
               <div className="icon">
                 <LuArrowUpRightSquare size={24} />

@@ -40,7 +40,7 @@ const TrackingForm: React.FC = () => {
   };
   return (
     <>
-      <div className="tracking-form absolute bottom-[30%] md:h-56 md:w-4/5 mx-5 md:mx-auto left-0 right-0">
+      <div className="tracking-form absolute md:bottom-[30%] bottom-[25%] md:h-56 h-1/2 md:w-4/5 mx-5 md:mx-auto left-0 right-0">
         <div className="flex justify-between items-center px-2  border-b border-borderColor">
           <div className="flex gap-1 ">
             <span className="bg-blue-500 inline-block center w-3 h-3 rounded-full"></span>
@@ -50,8 +50,8 @@ const TrackingForm: React.FC = () => {
 
           <div className="flex mx-auto text-center items-center gap-2 text-slate-50 uppercase  text-lg">
             <div className="flex flex-col gap-1 items-end">
-              <span className="w-6 h-0.5 bg-p1"></span>
-              <span className="w-10 h-0.5 bg-p1"></span>
+              <span className="w-6 h-0.5 bg-orange-dark"></span>
+              <span className="w-10 h-0.5 bg-orange-dark"></span>
             </div>
             Track Your Parcel
           </div>
@@ -111,7 +111,7 @@ const TrackingForm: React.FC = () => {
               />
             </div>
 
-            <button className=" md:col-span-2 md:w-full w-1/2 text-center mx-auto cssbuttons-io-button  bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
+            <button className=" md:col-span-2 md:w-full w-1/2 text-center mx-auto cssbuttons-io-button bg-primary-dark">
               Search
               <div className="icon">
                 <TbMapPinSearch size={28} />
@@ -128,7 +128,7 @@ const TrackingForm: React.FC = () => {
       {/* this is sub modal where have a multiple cn by receiver or sender number */}
       {isSubModalOpen && (
         <div className=" inset-0 tracking-infoTable flex items-center justify-center absolute z-50">
-          <div className="absolute top-10 bg-white p-4 rounded-lg shadow-lg md:w-4/5 w-[90%] mt-5">
+          <div className="absolute top-10 bg-white p-4 rounded-lg shadow-lg md:w-4/5 w-[98%] mt-5 h-fit">
             <SubModal />
             <div className="flex justify-end items-center gap-4 mt-4">
               <BtnClose onClick={closeSubModal} />
@@ -139,7 +139,7 @@ const TrackingForm: React.FC = () => {
       {/* cn details modal  */}
       {CNDetailsModalOpen && (
         <div className=" inset-0 tracking-infoTable flex items-center justify-center absolute z-50">
-          <div className="absolute top-0 bg-white p-4 rounded-lg shadow-lg md:w-4/5 w-[90%] mt-5">
+          <div className="absolute top-0 bg-white p-4 rounded-lg shadow-lg md:w-4/5 w-[98%] mt-5 h-fit">
             <TrackingDetailsByCN onClick={closeCNDetailsModal} />
             <div className="flex justify-end items-center gap-4 mt-4">
               <BtnComplain /> <BtnClose onClick={closeCNDetailsModal} />

@@ -74,7 +74,7 @@
 }
 
 .tracking-form {
-  background: rgba(102, 173, 217, 0.25);
+  background: rgba(45, 164, 238, 0.25);
   box-shadow: 0 8px 32px 0 rgba(240, 46, 170, 0.5);
   /* box-shadow: 0 20px 30px rgba(240, 46, 170, 0.7); */
   backdrop-filter: blur(3px);
@@ -84,7 +84,7 @@
 }
 .tracking-infoTable {
   background: rgba(102, 173, 217, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(240, 46, 170, 0.5);
+  /* box-shadow: 0 8px 32px 0 rgba(240, 46, 170, 0.5); */
   /* box-shadow: 0 20px 30px rgba(240, 46, 170, 0.7); */
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(4px);
@@ -255,7 +255,9 @@ table tr {
 .statusDetailsTable td {
   @apply text-left px-4 py-2 border-b border-gray-200 bg-white text-sm;
 }
-
+ul li span {
+  @apply text-gray-700 font-semibold;
+}
 /* complain btn css  */
 .complain button {
   /* width: 100px; */

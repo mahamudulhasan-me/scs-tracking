@@ -1,6 +1,7 @@
 "use client";
 
 import { IoCloseCircleSharp } from "react-icons/io5";
+import StatusTimeline from "../StatusTimeline/StatusTimeline";
 import TrackingStatusAccordion from "./TrackingStatusAccordion";
 
 const basicInfoTH = [
@@ -21,24 +22,34 @@ const TrackingDetailsByCN = ({ onClick }: TrackingDetailsByCNProps) => {
         onClick={onClick}
         className="absolute -top-1 -right-1 text-red-600 cursor-pointer text-right text-4xl hover:ring-1 ring-red-600 transition-all duration-300 rounded-full"
       />
-      <div className="text-left text-gray-700 bg-slate-200 p-2 rounded-md mb-5">
-        <h1 className="text-xl font-semibold mb-4">
-          <span className="border border-p2 text-p2 bg-opacity-20  bg-p2 rounded-md p-1 font-normal">
-            CN Number:
-          </span>{" "}
-          70159001086032
+      <div className=" text-gray-700 bg-slate-200 pt-4 rounded-md text-center">
+        <h1 className="md:text-2xl text-xl font-semibold">
+          Tracking CN: 70159001086032
         </h1>
-        <p>
-          {" "}
-          <span className="border border-purple-600 text-purple-700  bg-purple-200 rounded-md p-1">
-            Booking Date:
-          </span>{" "}
-          02-Aug-2023
+        <p className="font-semibold pb-4">
+          Booking Date: <span className="text-success-dark">02-Aug-2023</span>
         </p>
+        <div className="bg-gray-100 py-5">
+          <ul className="flex items-baseline justify-between px-2 flex-wrap">
+            <li>
+              <span>Booking From: </span>Dhaka
+            </li>
+            <li>
+              <span>Destination: </span>Narsingdhi
+            </li>
+            <li>
+              <span>Status: </span>
+              Delivered
+            </li>
+            <li>
+              <span>Receiver Contact: </span>017****70
+            </li>
+          </ul>
+        </div>
       </div>
-
+      <StatusTimeline />
       {/* info table-1 */}
-      <div className="overflow-x-auto mb-5">
+      {/* <div className="overflow-x-auto mb-5">
         <div className="inline-block min-w-full shadow-md rounded-lg overflow-hidden">
           <table className="min-w-full leading-normal">
             <thead>
@@ -67,7 +78,7 @@ const TrackingDetailsByCN = ({ onClick }: TrackingDetailsByCNProps) => {
             </tbody>
           </table>
         </div>
-      </div>
+      </div> */}
       <TrackingStatusAccordion />
     </>
   );

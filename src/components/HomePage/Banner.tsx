@@ -26,7 +26,7 @@ const Banner: React.FC<BannerProps> = () => {
           <Lottie
             animationData={animationData}
             loop={true}
-            className="md:w-1/2 pt-20"
+            className="md:w-1/2 pt-16"
           />
         </div>
       </div>

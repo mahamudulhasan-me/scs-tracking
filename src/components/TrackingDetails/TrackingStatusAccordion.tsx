@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { CiSquareMinus, CiSquarePlus } from "react-icons/ci";
 import { IoCheckmarkDone } from "react-icons/io5";
-const basicInfoTH = ["", "Date", "Last Status", "Vehicle No.", "Mnf./SL No."];
+const basicInfoTH = ["", "Date", "Last Status"];
 
 const TrackingStatusAccordion = () => {
   const [open, setOpen] = useState<boolean>(false);
@@ -15,11 +15,7 @@ const TrackingStatusAccordion = () => {
               {basicInfoTH.map((th, index) => (
                 <th
                   key={index}
-                  className={`px-5 py-3 border-b-2 border-gray-200 bg-slate-200 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider ${
-                    index >= basicInfoTH.length - 2
-                      ? "hidden sm:table-cell"
-                      : ""
-                  }`}
+                  className={`px-5 py-3 border-b-2 border-gray-200 bg-slate-200 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider `}
                 >
                   {th}
                 </th>
@@ -42,8 +38,6 @@ const TrackingStatusAccordion = () => {
                 03-Aug-2023
               </td>
               <td className="bangla-font">পণ্যটি ডেলিভারি সম্পন্ন হয়েছে</td>
-              <td className="">N/A</td>
-              <td className="">550</td>
             </tr>
           </tbody>
         </table>
@@ -58,24 +52,18 @@ const TrackingStatusAccordion = () => {
                 <td className="w-[10%]">
                   <IoCheckmarkDone color="green" size={24} />
                 </td>
-                <td className="md:w-[21%]">03-Aug-2023</td>
-                <td className="md:w-[35%] bangla-font">
-                  পণ্যটি ডেলিভারি সম্পন্ন হয়েছে
-                </td>
-                <td className="md:w-[20%] ">N/A</td>
-                <td className="md:w-[20%] ">550</td>
+                <td>03-Aug-2023</td>
+                <td>পণ্যটি ডেলিভারি সম্পন্ন হয়েছে</td>
               </tr>
               <tr>
-                <td className="w-[10%]">
+                <td>
                   <IoCheckmarkDone color="green" size={24} />
                 </td>
-                <td className="md:w-[21%]">03-Aug-2023</td>
-                <td className="md:w-[35%] bangla-font">
+                <td>03-Aug-2023</td>
+                <td>
                   পণ্যটি ঢাকা মিরপুর-১০ থেকে ঢাকা দিলকুশা এর উদ্দেশ্যে ছেড়ে
                   গেছে।
                 </td>
-                <td className="md:w-[20%] ">N/A</td>
-                <td className="md:w-[20%] ">550</td>
               </tr>
             </tbody>
           </table>

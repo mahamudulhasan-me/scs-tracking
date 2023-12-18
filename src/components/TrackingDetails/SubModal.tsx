@@ -45,7 +45,7 @@ const SubModal = () => {
                   <td>02-Aug-2023</td>
                   <td onClick={() => setCNDetailsModalOpen(true)}>
                     <span
-                      className="ring-1 ring-purple-600 pl-2 pr-5 py-2 rounded-lg border-slate-300 hover:bg-purple-700 hover:text-white hover:duration-200 hover:ring-0 transition-all duration-300 cursor-pointer items-center flex relative group "
+                      className="ring-1 ring-primary-main pl-2 pr-5 py-2 rounded-lg border-slate-300 hover:bg-primary-dark hover:text-white hover:duration-200 hover:ring-0 transition-all duration-300 cursor-pointer items-center flex relative group "
                       title="View Details"
                     >
                       70159001086027

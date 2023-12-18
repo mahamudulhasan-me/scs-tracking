@@ -22,7 +22,7 @@ const TrackingDetailsByCN = ({ onClick }: TrackingDetailsByCNProps) => {
         onClick={onClick}
         className="absolute -top-1 -right-1 text-red-600 cursor-pointer text-right text-4xl hover:ring-1 ring-red-600 transition-all duration-300 rounded-full"
       />
-      <div className=" text-gray-700 bg-slate-200 pt-4 rounded-md text-center">
+      <div className=" text-gray-700 bg-slate-200 pt-4 rounded-md text-center scroll-smooth">
         <h1 className="md:text-2xl text-xl font-semibold">
           Tracking CN: 70159001086032
         </h1>

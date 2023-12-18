@@ -19,6 +19,7 @@ const Header: React.FC = () => {
           Sundarban Courier Service (Pvt.) Ltd.
         </p>
       </div>
+      <Link href={"/home2"}>Another Page</Link>
       <Link
         href={"https://customer.sundarbancourierltd.com/"}
         target="_blank"

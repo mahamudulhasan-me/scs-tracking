@@ -23,7 +23,7 @@ const TrackingStatusAccordion = () => {
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr onClick={() => setOpen(!open)}>
               <td
                 onClick={() => setOpen(!open)}
                 className="px-5  border-b border-gray-200 bg-white text-2xl cursor-pointer"
@@ -49,11 +49,55 @@ const TrackingStatusAccordion = () => {
           <table className="w-full bg-slate-600 leading-normal statusDetailsTable">
             <tbody>
               <tr>
-                <td className="w-[10%]">
+                <td>
                   <IoCheckmarkDone color="green" size={24} />
                 </td>
                 <td>03-Aug-2023</td>
                 <td>পণ্যটি ডেলিভারি সম্পন্ন হয়েছে</td>
+              </tr>
+              <tr>
+                <td>
+                  <IoCheckmarkDone color="green" size={24} />
+                </td>
+                <td>03-Aug-2023</td>
+                <td>পণ্যটি ডেলিভারি সম্পন্ন হয়েছে</td>
+              </tr>
+              <tr>
+                <td>
+                  <IoCheckmarkDone color="green" size={24} />
+                </td>
+                <td>03-Aug-2023</td>
+                <td>পণ্যটি ডেলিভারি সম্পন্ন হয়েছে</td>
+              </tr>
+              <tr>
+                <td>
+                  <IoCheckmarkDone color="green" size={24} />
+                </td>
+                <td>03-Aug-2023</td>
+                <td>
+                  পণ্যটি ঢাকা মিরপুর-১০ থেকে ঢাকা দিলকুশা এর উদ্দেশ্যে ছেড়ে
+                  গেছে।
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <IoCheckmarkDone color="green" size={24} />
+                </td>
+                <td>03-Aug-2023</td>
+                <td>
+                  পণ্যটি ঢাকা মিরপুর-১০ থেকে ঢাকা দিলকুশা এর উদ্দেশ্যে ছেড়ে
+                  গেছে।
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <IoCheckmarkDone color="green" size={24} />
+                </td>
+                <td>03-Aug-2023</td>
+                <td>
+                  পণ্যটি ঢাকা মিরপুর-১০ থেকে ঢাকা দিলকুশা এর উদ্দেশ্যে ছেড়ে
+                  গেছে।
+                </td>
               </tr>
               <tr>
                 <td>

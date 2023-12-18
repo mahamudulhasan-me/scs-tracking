@@ -36,7 +36,7 @@ const CustomerDashboard: React.FC<CustomerDashboardProps> = () => {
       </div>
       <div className="col-span-5 md:mt-0 mt-8">
         <SectionHeadTitle title="Customer Dashboard" />
-        <h1 className="text-3xl text-slate-900 font-semibold">
+        <h1 className="md:text-3xl text-2xl text-slate-900 font-semibold">
           Enjoy Customer Dashboard With Interesting Features
         </h1>
         <p className="my-4 text-justify text-gray-600">
@@ -57,30 +57,30 @@ const CustomerDashboard: React.FC<CustomerDashboardProps> = () => {
             Company
           </p>
         </div>
-        <div className="md:flex items-center md:gap-5">
+        <div className="flex items-center justify-between md:gap-5 gap-2">
           <Link
             href={"https://customer.sundarbancourierltd.com/"}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-[40%]"
+            className="md:w-[40%]"
           >
-            <button className=" md:col-span-2 md:w-full w-1/2 text-center mx-auto cssbuttons-io-button bg-primary-dark">
+            <button className="md:w-full  text-center mx-auto cssbuttons-io-button bg-primary-dark">
               Dashboard
               <div className="icon">
                 <LuArrowUpRightSquare size={24} />
               </div>
             </button>
           </Link>
-          <div className="w-[60%] flex items-center md:p-3 p-1 bg-white rounded-md shadow-lg">
-            <section className="flex justify-center items-center w-12 h-12 rounded-full shadow-md bg-gradient-to-r from-[#F9C97C] to-[#A2E9C1] hover:from-[#C9A9E9] hover:to-[#7EE7FC] hover:cursor-pointer hover:scale-110 duration-300">
+          <div className="w-[60%] flex items-center md:p-2 px-1 bg-white rounded-md shadow-lg">
+            <section className="flex justify-center items-center w-10 h-10 md:w-12 md:h-12 rounded-full shadow-md bg-gradient-to-r from-[#F9C97C] to-[#A2E9C1] hover:from-[#C9A9E9] hover:to-[#7EE7FC] hover:cursor-pointer hover:scale-110 duration-300">
               <BsHeadset size={24} />
             </section>
-            <section className="block border-l border-gray-300 m-3">
+            <section className="block border-l border-gray-300 m-1">
               <div className="pl-3">
                 <h3 className="text-gray-600 font-semibold text-sm">
                   For More Details
                 </h3>
-                <h3 className="bg-clip-text text-transparent bg-gradient-to-l from-[#005BC4] to-[#27272A] text-lg font-bold">
+                <h3 className="bg-clip-text text-transparent bg-gradient-to-l from-[#005BC4] to-[#27272A] md:text-lg font-bold">
                   09612003003
                 </h3>
               </div>

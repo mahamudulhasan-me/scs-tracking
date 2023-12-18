@@ -12,7 +12,7 @@ const BtnDownload = ({ to, img, platform, active }: BtnDownloadProps) => {
   return (
     <Link
       href={to}
-      className={` ${active} w-48 border hover:border-purple-950   px-5  py-2 rounded-full flex items-center gap-2 hover:bg-purple-950 duration-300 hover:duration-300 transition-all hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)]`}
+      className={` ${active} md:w-48 border hover:border-purple-950   px-5  py-2 rounded-full flex items-center gap-2 hover:bg-purple-950 duration-300 hover:duration-300 transition-all hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)]`}
     >
       <div className="flex items-center gap-2">
         <Image

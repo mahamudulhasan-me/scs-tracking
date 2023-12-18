@@ -9,6 +9,7 @@ export default function Home() {
     <main className={`${inter.className}`}>
       <Header />
       <HomePage />
+      {/* <Footer /> */}
     </main>
   );
 }

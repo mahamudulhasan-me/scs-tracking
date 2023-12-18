@@ -127,10 +127,10 @@ const TrackingForm: React.FC = () => {
 
       {/* this is sub modal where have a multiple cn by receiver or sender number */}
       {isSubModalOpen && (
-        <div className=" inset-0 tracking-infoTable flex items-center justify-center absolute z-50">
-          <div className="absolute top-10 bg-white p-4 rounded-lg shadow-lg md:w-4/5 w-[98%] mt-5 h-fit">
-            <SubModal />
-            <div className="flex justify-end items-center gap-4 mt-4">
+        <div className="fixed inset-0 tracking-infoTable flex items-center justify-center  z-50">
+          <div className="absolute top-10 bg-white p-4 rounded-lg shadow-lg md:w-4/5 w-[98%] mt-5 min-h-fit">
+            <SubModal setCNDetailsModalOpen={setCNDetailsModalOpen} />
+            <div className="flex justify-end items-center gap-4">
               <BtnClose onClick={closeSubModal} />
             </div>
           </div>
@@ -138,8 +138,8 @@ const TrackingForm: React.FC = () => {
       )}
       {/* cn details modal  */}
       {CNDetailsModalOpen && (
-        <div className=" inset-0 tracking-infoTable flex items-center justify-center absolute z-50">
-          <div className="absolute top-0 bg-white p-4 rounded-lg shadow-lg md:w-4/5 w-[98%] mt-5 h-fit">
+        <div className="fixed inset-0 tracking-infoTable flex items-center justify-center z-50 overflow-auto">
+          <div className="absolute top-0  bg-white p-4 rounded-lg shadow-lg md:w-4/5 w-[98%] my-5 h-fit">
             <TrackingDetailsByCN onClick={closeCNDetailsModal} />
             <div className="flex justify-end items-center gap-4 mt-4">
               <BtnComplain /> <BtnClose onClick={closeCNDetailsModal} />

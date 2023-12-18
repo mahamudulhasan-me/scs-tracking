@@ -4,7 +4,7 @@
 
 /* For Webkit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
   height: 10px;
 }
 
@@ -23,7 +23,9 @@
   font-weight: normal;
   font-style: normal;
 }
-
+body {
+  @apply scroll-smooth;
+}
 .bangla-font {
   font-family: "sutonnyMJ";
 }
@@ -89,7 +91,7 @@
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(4px);
   /* border-radius: 10px; */
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  /* border: 1px solid rgba(255, 255, 255, 0.18); */
 }
 
 .cssbuttons-io-button {

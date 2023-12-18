@@ -1,8 +1,4 @@
-import { useState } from "react";
 import { GoArrowUpRight } from "react-icons/go";
-import BtnClose from "../ButtonGroup/BtnClose";
-import BtnComplain from "../ButtonGroup/BtnComplain";
-import TrackingDetailsByCN from "./TrackingDetailsByCN";
 
 const basicInfoTH = [
   "SL",
@@ -15,15 +11,10 @@ const basicInfoTH = [
   "Item Description",
   "LOT",
 ];
-const SubModal = () => {
-  const [CNDetailsModalOpen, setCNDetailsModalOpen] = useState(false);
-  const closeCNDetailsModal = () => {
-    // Close the modal
-    setCNDetailsModalOpen(false);
-  };
+const SubModal = ({ setCNDetailsModalOpen }) => {
   return (
     <>
-      <div className="subModal">
+      <div className="overflow-auto scroll-smooth">
         <div className="overflow-x-auto mb-5">
           <div className="inline-block min-w-full shadow-md rounded-lg overflow-hidden">
             <table className="min-w-full leading-normal ">
@@ -67,16 +58,6 @@ const SubModal = () => {
           </div>
         </div>
       </div>
-      {CNDetailsModalOpen && (
-        <div className=" inset-0 tracking-infoTable flex items-center justify-center absolute z-50 rounded-t-md">
-          <div className="absolute top-0 bg-white p-4 rounded-lg shadow-lg w-full ">
-            <TrackingDetailsByCN onClick={closeCNDetailsModal} />
-            <div className="flex justify-end items-center gap-4 mt-4">
-              <BtnComplain /> <BtnClose onClick={closeCNDetailsModal} />
-            </div>
-          </div>
-        </div>
-      )}
     </>
   );
 };

@@ -79,7 +79,14 @@ const CnInfo = ({
       ) : (
         data?.getOperatorCNInfo?.statusCode == 200 &&
         cnInfo && (
-          <Stack spacing={1} direction={"column"}>
+          <Stack
+            spacing={1}
+            direction={"column"}
+            sx={{
+              width: "100%",
+              marginBottom: { xs: 10, sm: 10, md: 0 },
+            }}
+          >
             <Typography
               variant="h5"
               sx={{

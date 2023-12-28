@@ -7,7 +7,7 @@ import {
   Typography,
   useTheme,
 } from "@mui/material";
-import {useRouter} from "next/router";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
 import ArrowCircleDownIcon from "@mui/icons-material/ArrowCircleDown";

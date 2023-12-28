@@ -14,7 +14,15 @@ const Footer = ({ al = "row" }: { al?: "column" | "row" }) => {
       alignItems={"center"}
       spacing={{ xs: 0, sm: spacing }}
       borderTop={"1px solid grey"}
-      sx={{ paddingTop: 2 }}
+      sx={{
+        paddingTop: 2,
+        paddingBottom: 2,
+        position: "fixed",
+        bottom: "-1rem",
+        width: "100%",
+        bgcolor: theme.palette.background.paper,
+        zIndex: 10,
+      }}
     >
       <Typography
         variant="subtitle2"

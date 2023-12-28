@@ -75,6 +75,8 @@ const Tracking = ({ route }: { route?: string }) => {
               position: "fixed",
               zIndex: 10,
               top: 70,
+              left: 0,
+              right: 0,
               backgroundColor: "#fff",
               padding: 2,
             }}
@@ -98,6 +100,7 @@ const Tracking = ({ route }: { route?: string }) => {
                 color: theme.palette.secondary.main,
                 paddingBottom: 1,
                 width: "fit-content",
+                textAlign: "center",
               }}
             >
               Need the status of your shipment or proof of delivery? Enter your
@@ -186,7 +189,7 @@ const Tracking = ({ route }: { route?: string }) => {
                     setError={setError}
                   />
 
-                  <Grid container mt={5}>
+                  <Grid container mt={5} mb={{ xs: 8, sm: 5, md: 18 }}>
                     <Grid item xs={12} sm={12} md={12} lg={8}>
                       <StatusHistory cnNumber={cnNumberSubmit} />
                     </Grid>

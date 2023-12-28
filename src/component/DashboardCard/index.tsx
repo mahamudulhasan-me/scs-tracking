@@ -4,7 +4,7 @@ import CustomerDashboardCard from "./CustomerDashboardCard";
 
 const DashboardCardContainer = () => {
   return (
-    <Container>
+    <Container sx={{ marginBottom: { xs: 10, sm: 0 } }}>
       <Stack
         direction={{ xs: "column", sm: "row" }}
         justifyContent={"center"}

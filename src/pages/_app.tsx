@@ -9,17 +9,14 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import { ThemeProvider } from "@mui/material";
 import type { AppProps } from "next/app";
-import { SnackbarProvider } from "notistack";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <ApolloProvider client={client}>
         <ThemeProvider theme={theme({})}>
-          <SnackbarProvider>
-            <Component {...pageProps} />
-            <Footer />
-          </SnackbarProvider>
+          <Component {...pageProps} />
+          <Footer />
         </ThemeProvider>
       </ApolloProvider>
     </>

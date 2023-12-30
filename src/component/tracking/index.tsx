@@ -78,7 +78,7 @@ const Tracking = ({ route }: { route?: string }) => {
               left: 0,
               right: 0,
               backgroundColor: "#fff",
-              padding: 2,
+              padding: 4,
             }}
           >
             <Typography
